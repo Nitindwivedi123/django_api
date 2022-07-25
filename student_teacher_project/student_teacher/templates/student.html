@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+</head>
+<body style="background-color:pink">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">STP</a>
+          </div>
+          <ul class="nav navbar-nav">     
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div style="text-align:center" class="student_register">
+        <form style="margin-top: 100px" action="/addstudent/" method="post">
+            <!--{% csrf_token %}-->
+            <div>
+                <label for="StudentId">Student Id:</label>
+                <input type="text" id="StudentId" name="StudentId"/ required>
+            </div>
+            <br>
+            <div>
+                <label for="StudentName">Student Name:</label>
+                <input type="text" id="StudentName" name="StudentName"/>
+            </div>
+            <br>
+            <div>
+                <label for="StudentClass">Student Class:</label>
+                <input type="text" id="StudentClass" name="StudentClass"/>
+            </div>
+            <br>
+            <div>
+                <label for="StudentAge">Student Age:</label>
+                <input type="number" id="StudentAge" name="StudentAge"/>
+            </div>
+            <br>
+            <div>
+                <label for="StudentGender">Student Gender:</label>
+                <input type="radio" id="StudentGender" name="StudentGender" value="male"> Male
+                <input type="radio" id="StudentGender" name="StudentGender" value="female"> Female<br>
+                
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div> 
+</body>
+</html>
